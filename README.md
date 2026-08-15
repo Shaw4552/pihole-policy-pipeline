@@ -1,8 +1,15 @@
 # Pi-hole Policy Pipeline (DNS Filtering as Code)
 
+> **Portfolio Progression Project**
+>
+> This repository documents an earlier stage of my DNS policy automation work, focused on version-controlled filtering rules and the design of a safe deployment pipeline.
+>
+> The concepts developed here later informed the broader DNS and infrastructure automation work documented in my current public portfolio:
+> [Enterprise-Style Homelab Infrastructure](https://github.com/Shaw4552/homelab-public)
+
 ## Overview
 
-This project implements a version-controlled DNS policy system using Pi-hole, designed to simulate infrastructure-as-code principles for DNS filtering.
+This project documents the design of a version-controlled DNS policy system using Pi-hole, applying infrastructure-as-code principles to DNS filtering.
 
 ---
 
@@ -31,10 +38,14 @@ All updates are:
 
 ---
 
-## Structure
+## Planned Policy Structure
 
-text lists/   apple-core.txt   microsoft-trusted.txt   cdn-default.txt   bitwarden-trusted.txt 
-
+```text
+lists/
+├── apple-core.txt
+├── microsoft-trusted.txt
+├── cdn-default.txt
+└── bitwarden-trusted.txt
 ---
 
 ## Design Principles
@@ -46,7 +57,7 @@ text lists/   apple-core.txt   microsoft-trusted.txt   cdn-default.txt   bitward
 
 ---
 
-## CI/CD Direction
+## CI/CD Direction at This Stage
 
 Future pipeline will:
 
@@ -64,7 +75,7 @@ Future pipeline will:
 
 ---
 
-## Future Improvements
+## Improvements Identified at This Stage
 
 - GitHub Actions integration
 - Automated deployment to multiple DNS nodes
